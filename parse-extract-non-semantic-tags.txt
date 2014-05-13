@@ -1,0 +1,13 @@
+For parsing/extracting general data (not just semantic tags, but by line, open XML file in Notepad++. How to extract:
+
+* install textFX and XML tools. Use 'plugins' dropdown.
+
+* select all text (Edit -- Select All).
+
+* Run command: textFX --> textFX convert --> strip HTLM tags tabs table tabs/nontabs.
+
+* Run command: pretty print (XML only with line breaks).
+
+* Save tab-delimited output as a .txt file.
+
+* Open in Excel, manipulate from there.
