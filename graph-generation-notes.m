@@ -29,3 +29,21 @@ b = score(A(:,2));
 
 plot(a,b,'o');
 
+
+%% 3-D graph plotted as an animation.
+%% assume x,y,z have been created from data.
+
+h = plot3(NaN,NaN,NaN);
+xlim ([min(x) max(x)])
+ylim ([min(y) max(y)])
+zlim ([min(z) max(z)])
+i = 1:length(x);
+
+for k=i;
+	plot3(x(k),y(k),z(k),'erase','none','o')
+	M(k) = getframe
+	pause(0.01)
+end
+movie(M)
+
+%% "pause 0.01" is the time interval. Adjust to 0.1 if neccessary.
