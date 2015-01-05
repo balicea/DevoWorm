@@ -1,0 +1,13 @@
+// Bonferroni correction.
+k10 = c(list of p-values)
+k10 = sort(k10)
+bonferroni_p = p.adjust(k10, method='bonferroni')
+
+// Two-sample t-test.
+a = c(-,-,-,-,-)
+b = c(-,-,-,-,-)
+// variables with datapoints.
+
+var.test(a,b)
+t.test(a, b, var.equal=TRUE, paired=FALSE)
+// when both variables are independent variables, paired = FALSE.

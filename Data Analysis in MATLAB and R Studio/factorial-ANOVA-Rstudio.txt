@@ -1,0 +1,26 @@
+// Factorial ANOVA (conditions must be equal -- e.g. 3x3 ANOVA).
+
+geetwd()
+setwd("C:/Users/Bradly/Desktop")
+ts1 = read.csv("temp-selection.csv")
+r = c(t(as.matrix(ts1)))
+
+f1 = c("15","25","30")
+f2 = c("Strain1","Strain2","Strain3")
+
+// define size of factors and number of replicates.
+k1 = length(f1)
+k2 = length(f2)
+n = 3
+
+// define parameters of general linear model.
+tm1 = gl(k1,1,n * k1 * k2,factor(f1))
+tm2 = gl(k2,n * k1,n * k1 * k2, factor(f2))
+av = aov(r ~ tm1 * tm2)
+summary(av)
+av = aov(a~b)
+
+// for type I, II, III sum of squares.
+y = c(f1,f2)
+g = factor(rep(letters[1:2], c(length(f1), length(f2))),)
+summary(aov(y~g))
