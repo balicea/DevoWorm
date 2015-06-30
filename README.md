@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/balicea/devoworm.png?label=ready&title=Ready)](https://waffle.io/balicea/devoworm)
 DevoWorm
 ========
 
