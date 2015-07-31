@@ -14,9 +14,7 @@ Notes on construct #3:
 * each set of observations (cell stages) include all cells in observed embryo plus duplicates neccessary to align dataset to 112-cell stage. Cell Volume: Embryo Volume variable is close to 100 for the 112-cell stage (save for 4 missing cells). All others 
 add up to >100% due to duplicated cells.
 
-* table should be read horizontally, as a series of cell lineage paths. This addresses the following question: how does a cell and its descendents change in terms of absolute and relative volume over developmental time (2-cell to 112-cell stage)? 
-
-* missing data: 64-cell, 76-cell, and 112-cell stages are missing four cell identities (columns 69, 70, 96, and 97). Last known identities for these cell lineage paths are B6.4 (columns 69 and 70) and B6.3 (columns 96 and 97). 
+* each "set" are two adjacent time-points aligned for the larger cell stage. The "mother" cell (smaller cell stage) produces two daughter cells (or in one case produces two daughter cells and maintains its own identity through two division events). The error and asymmetry can be calculated on these pairs.
 
 Ascidian Differentiation Tree Analysis notes:
 
